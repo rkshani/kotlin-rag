@@ -1,0 +1,8 @@
+optimum[onnxruntime]>=1.23
+sentence-transformers>=3.2
+transformers>=4.45
+onnx>=1.17
+onnxruntime>=1.20
+numpy>=1.26
+onnxruntime-extensions>=0.14
+# prepare_whisper.py also needs Olive: pip install olive-ai (plus Olive examples/whisper/requirements.txt)

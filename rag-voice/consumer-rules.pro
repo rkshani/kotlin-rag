@@ -1,0 +1,3 @@
+-keep class ai.onnxruntime.** { *; }
+-keep class ai.onnxruntime.extensions.** { *; }
+-keepclasseswithmembernames class * { native <methods>; }

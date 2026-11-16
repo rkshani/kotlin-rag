@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Microphone for voice questions. The app must still request it at runtime. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Lets the on-device system recognizer be found on Android 11+ (package visibility). -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+</manifest>

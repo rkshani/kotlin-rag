@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Only for fetching the model file; inference itself is fully offline. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <!-- Needed for LiteRT-LM's GPU backend (Backend.GPU()). Optional: the CPU backend works without them. -->
+        <uses-native-library android:name="libvndksupport.so" android:required="false" />
+        <uses-native-library android:name="libOpenCL.so" android:required="false" />
+    </application>
+</manifest>
